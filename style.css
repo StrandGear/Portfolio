@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap'); /* font-family: 'Bellefair', serif; */
+@import url(https://fonts.googleapis.com/css?family=Khula:700); /* font-family: 'Khula', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap'); /*font-family: 'Hubballi', cursive; */
+@font-face {
+  font-family: "Consolas";
+  src: url(./fonts/consolas.ttf) format("ttf");
+}
+/*html + body */
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Hubballi', cursive;
+    font-size: 27px;
+}
+
+img {
+    max-width: 1200px;
+    max-height: 600px;
+}
+
+h2 {
+  font-family:"Consolas", serif;
+  font-size: 1.3em;
+}
+
+.left_pattern {
+  left: -8%;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+  position: fixed;
+  background-image: url(./img/bg/bgs.jpg);
+  opacity: 0.9;
+  background-repeat: repeat-y;
+}
+
+.right_pattern{
+  right: -14%;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+  position: fixed;
+  background-image: url(./img/bg/bgS_left.jpg);
+  background-position: right;
+  opacity: 0.9;
+  background-repeat: repeat-y;
+}
+
+/* body content */
+.main_container {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 30px auto 0 auto;
+    padding: 10px;
+    height: 500px;
+}
+
+.double_container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto 70px auto;
+  padding: 10px;
+  max-height: 600px;
+}
+
+.small_container {
+  width: 750px;
+  max-width: 750px;
+  height: 560px;
+  max-height: 560px;
+  display: inline-block;
+  align-items: center;
+  margin: 25px;
+}
+.small_container img {
+  width: 600px;
+  height: auto;
+}
+.small_container p {
+  margin: 10px 80px;
+  font-size: 28px;
+}
+.small_container h2 {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  align-self: center;
+}
+.small_container .code {
+  font-size: 17px;
+  margin: 45px 20px 0 20px;
+  padding: 10px;
+}
+
+.small_container .align {
+  display: flex;
+  align-items: center;
+  margin: 20px auto 0 auto;
+}
+
+button {
+  height: 60px;
+  width: 180px;
+  display: block;
+  margin: auto;
+  font-family: 'Hubballi', cursive;
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.6s ease;
+  font-size: xx-large;
+}
+button:hover {
+  background: rgb(63, 63, 63);
+  color: #c3c3c3;
+  cursor: pointer;
+}
+.startBtn {
+  margin: 50px auto;
+}
+.otherButton {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  height: 70px;
+  margin: 200px auto;
+}
+.otherButton.inView {
+  opacity: 1;
+}
+
+body #first_block {
+  font-size: 27px;
+}
+
+.left_container {
+    margin-right: 2%;
+    width: 800px;
+}
+
+.right_container {
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 400px;
+}
+
+.links_block {
+  display: flex;
+  justify-content: space-evenly;
+}
+.links_block img {
+  width: 55px;
+  height: 50px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#toTop {
+  z-index: 1000;
+  display: none;
+  right: 40px;
+  bottom: 20px;
+  position: fixed;
+  width: 55px;
+  height: 40px;
+  opacity: 0.55;
+  transition: opacity 0.2s ease-in-out;
+}
+#toTop:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background: rgb(93, 93, 93);
+    border-radius: 100px;
+    margin: 20px auto 20px auto;
+}
+
+.footprint {
+  display: block;
+  height: 90px;
+  width: 50px;
+  margin: 30px auto;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.footprint:hover{
+  /*cursor: pointer;*/
+}
+.footprint.inView {
+  opacity: 0.5;
+  transition: opacity 0.4s ease-in-out;
+}
+.footprint.outView {
+  opacity: 0;
+}
+.rightFoot {
+  position: relative;
+  left: +2%;
+}
+.leftFoot {
+  position: relative;
+  left: -2%;
+}
+
+.text_article {
+  color: #717171;
+}
+
+.otherContent {
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.otherContent.inView {
+  overflow: visible;
+  opacity: 1;
+}
+
+.code {
+  font-family: 'Consolas', serif;
+  margin-top: 0;
+  font-size: 16px;
+  background-color: rgba(241, 241, 241, 0.551);
+}
+
+.no_margin_right{
+  margin-right: 0;
+}
+
+* {box-sizing:border-box}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    opacity: 0;
+  }
+  .contentToAppear {
+    overflow: hidden;
+    transition: opacity 1s ease-in-out;
+  }
+  .inView {
+    overflow: visible;
+    opacity: 1;
+  }
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    max-width: 1200px;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .bigger_arrow {
+    font-size: 25px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover, .bottom_prev:hover, .bottom_next:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+    /* The dots/bullets/indicators */
+    .vertical_dot {
+      height: 20px;
+      width: 20px;
+      margin: 20px auto;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    
+
+    /* Terminal text for dates */
+    @import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+  font-family:"Consolas", serif;
+  font-size:1.4em;
+  text-align:center;
+  height:50px;
+  width:600px;
+  display:block;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}

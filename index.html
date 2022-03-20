@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="left_pattern"></div>
+  <div class="right_pattern"></div>
+  <div class="main_container" id="first_block">
+    <img class="left_container" id="first_img" src="./img/IMGP0420.png" alt="photo from behind of person sitting in the room"> 
+    <div class="right_container">
+        <p>ABOUT ME</p>
+        <p>Name: Anastasia </p>
+        <p>Hello! Here I presented my short story in Game Development jorney, which I hope to continue complementing with better projects and ideas in the near future.</p>
+
+        <div class="links_block">
+          <a href="https://github.com/StrandGear"><img src="./img/GitHub-logo.png" alt="github logo" onmouseover="gitHover(this)" onmouseout="gitUnhover(this)"></a>
+          <a href="https://strandgear.artstation.com"><img src="./img/artstation.png" alt="artstation logo" onmouseover="artstHover(this)" onmouseout="artstUnhover(this)"></a>
+          <a href="https://strandgear.itch.io"><img src="./img/itch-io-logo.png" alt="itch io logo" onmouseover="itchHover(this)" onmouseout="itchUnhover(this)"></a>
+        </div>
+    </div>
+      </div>
+  </div>
+  <button class="startBtn" onclick="interactionEvent()">START</button>
+  <img id="toTop" src="./img/Arrow_top_svg.png" alt="back to top" onclick="topFunction()">
+
+  <div class="transition">
+    <div class="" id="firstFootPrint">
+      <audio class="footprintAudio" src="./audio/footstep1.mp3"></audio>
+      <img class="footprint rightFoot" src="./img/footprints2L.png" alt="footprint in the snow">
+    </div>
+    <div class="footprintBlock">
+      <audio class="footprintAudio" src="./audio/footstep2.mp3"></audio>
+      <img class="footprint leftFoot" src="./img/footprints2R.png" alt="footprint in the snow">
+    </div>
+    <div class="footprintBlock">
+      <audio class="footprintAudio" src="./audio/footstep3.mp3"></audio>
+      <img class="footprint rightFoot" src="./img/footprints2L.png" alt="footprint in the snow">
+    </div>
+  </div>
+
+    <!-- Slideshow container -->
+<div class="slideshow-container contentToAppear">
+
+    <!--DATE-->
+    <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade ">
+      <div class="main_container">
+        <img class="left_container" src="./img/unifeel.jpg">
+        <div class="right_container">
+          <p>
+            <span class="text_article">Genre:</span> Action
+            <br>
+            <span class="text_article"><br>Thematic Setting:</span> Information about planets of Solar System in two languages and simple minigame with different background
+            <br>
+            <span class="text_article"><br>Tech Stack:</span> Java, Android Studio
+            <br>
+            <span class="text_article"><br>Platform(s):</span> Mobile
+            <br>
+            <span class="text_article"><br>Extra:</span> Was made as a final project at IT Samsung School
+          </p>
+          </div>
+    </div>
+    </div>
+    <div class="mySlides fade">
+      <video class="main_container" style="width: auto;" src="./video/UniFeel.mp4" controls = "controls autoplay"></video>
+
+    </div>  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1, 'mySlides')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'mySlides')">&#10095;</a>
+
+      <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="mySlides_dot dot" onclick="currentSlide(1, 'mySlides')"></span>
+      <span class="mySlides_dot dot" onclick="currentSlide(2, 'mySlides')"></span>
+    </div>
+  </div>
+</div>
+  <br>
+  
+  <div class="transition">
+    <div class="footprintBlock">
+      <audio class="footprintAudio" src="./audio/footstep1.mp3"></audio>
+      <img class="footprint rightFoot" src="./img/footprints2L.png" alt="footprint in the snow">
+    </div>
+    <div class="footprintBlock">
+      <audio class="footprintAudio" src="./audio/footstep2.mp3"></audio>
+      <img class="footprint leftFoot" src="./img/footprints2R.png" alt="footprint in the snow">
+    </div>
+    <div class="footprintBlock">
+      <audio class="footprintAudio" src="./audio/footstep3.mp3"></audio>
+      <img class="footprint rightFoot" src="./img/footprints2L.png" alt="footprint in the snow">
+    </div>
+  </div>
+
+
+    <!-- Slideshow container -->
+<div class="slideshow-container contentToAppear">
+
+      <!--DATE-->
+    <div class='console-container'><span id='text2'></span><div class='console-underscore' id='console'>&#95;</div></div>
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides2 fade ">
+      <div class="main_container">
+        <img class="left_container" src="./img/space_cat2.png">
+        <div class="right_container">
+          <p>
+            <span class="text_article">Genre:</span>Platformer
+            <br>
+            <span class="text_article"><br>Thematic Setting:</span> Endless runner with increasing difficulty; UFO tries to destroy platforms, player dies from touching UFO or falling
+            <br>
+            <span class="text_article"><br>Tech Stack:</span> GML, GameMaker Studio2
+            <br>
+            <span class="text_article"><br>Platform(s):</span> HTML5
+            <br>
+            <span class="text_article"><br>Extra:</span> Was made for Opera GX game jam
+            <br> <a href="https://gxc.gg/games/62u5gd/Space-Nyan-Cat/">Full game is here</a> (only for Opera users for now :c)
+          </p>
+      </div>
+    </div>
+    </div>
+    <div class="mySlides2 fade">
+      <video class="main_container" style="width: auto;" src="./video/space_nyan.mp4" controls = "controls autoplay"></video>
+      
+    </div>
+    <div class="mySlides2 fade">
+      <div class="main_container">
+        <div class="left_container" style="margin-left: 15px; margin-right: 10px">
+          <h2>Platforms spawner</h2>
+          <p class="code">
+            //high level
+            <br>var platforms_high = instance_create_layer(getX_high, getY_high, "Instances_2", obj_platform);
+          <br>&emsp; platforms_high.speed = random_range(speedMin, speedMax);
+          <br>&emsp;platforms_high.direction = 180; 
+          <br>//middle level 
+          <br>var platforms_middle = instance_create_layer(getX_middle, getY_middle, "Instances_2", obj_platform);
+          <br>&emsp;  platforms_middle.speed = random_range(speedMin, speedMax);
+          <br>&emsp;  platforms_middle.direction = 180;  
+          <br>//low level	
+          <br>var platforms_low = instance_create_layer(room_width + random_range(1,4), getY_low, "Instances_2", obj_platform);
+          <br>&emsp;  platforms_low.speed = random_range(speedMin, speedMax);
+          <br>&emsp;  platforms_low.direction = 180; 
+          </p>
+        </div>
+        <div class="right_container">
+          <h2>Projectiles spawner</h2>
+          <p class="code">
+            if ( getRotation > 60 )
+            <br>&emsp; getRotation = arctan(getY_high/getX_high);
+            <br>else if ( getRotation > 30 && getRotation < 60 )
+            <br>&emsp;getRotation = -arctan(getY_middle/getX_middle);
+            <br>else if (getRotation < 30)
+            <br>&emsp;getRotation = getRotation;
+            <br>var projectile = instance_create_layer(0, obj_enemy.y, "Instances_2", obj_projectile);
+            <br>&emsp;projectile.speed = 10;
+            <br>&emsp;projectile.direction = getRotation;
+          </p>
+        </div>
+      </div>
+    </div>  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1, 'mySlides2')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'mySlides2')">&#10095;</a>
+
+      <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="mySlides2_dot dot" onclick="currentSlide(1, 'mySlides2')"></span>
+      <span class="mySlides2_dot dot" onclick="currentSlide(2, 'mySlides2')"></span>
+      <span class="mySlides2_dot dot" onclick="currentSlide(3, 'mySlides2')"></span>
+    </div>
+  </div>
+
+  <div class="transition">
+    <div class="footprintBlock">
+      <audio class="footprintAudio" src="./audio/footstep1.mp3"></audio>
+      <img class="footprint leftFoot" src="./img/footprints2R.png" alt="footprint in the snow">
+    </div>
+    <div class="footprintBlock">
+      <audio class="footprintAudio" src="./audio/footstep2.mp3"></audio>
+      <img class="footprint rightFoot" src="./img/footprints2L.png" alt="footprint in the snow">
+    </div>
+    <div class="footprintBlock">
+      <audio class="footprintAudio" src="./audio/footstep3.mp3"></audio>
+      <img class="footprint leftFoot" src="./img/footprints2R.png" alt="footprint in the snow">
+    </div>
+  </div>
+
+    <!-- Slideshow container -->
+<div class="slideshow-container contentToAppear">
+
+      <!--DATE-->
+      <div class='console-container'><span id='text3'></span><div class='console-underscore' id='console'>&#95;</div></div>
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides3 fade ">
+      <div class="main_container">
+        <img class="left_container" src="./img/gesundi/gesundi_mb.jpg">
+        <div class="right_container">
+          <p>
+            <span class="text_article">Genre:</span>Idle game
+            <span class="text_article"><br>Thematic Setting:</span> Player needs to keep clean his house and his mind while annoying cousins are making mess. From time to time hero sings random songs and pushing cousins to get them out of the way.
+            <span class="text_article"><br>Tech Stack:</span> C#, Unity
+            <span class="text_article"><br>Extra:</span> First team project, made for Brackeys game jam on the theme "Let there be Chaos".
+            <br><a href="https://strandgear.itch.io/gesundi">Full game is here</a>
+          </p>
+      </div>
+    </div>
+    </div>
+    <div class="mySlides3 fade">
+      <div class="main_container">
+        <video class="left_container no_margin_right" src="./video/gesundi/pickUp.mp4" controls = "controls autoplay" autoplay loop></video>
+        <div class="right_container">
+          <p class="code">
+            void Update(){
+              <br>&ensp;if (playerEntered && Input.GetKeyDown(KeyCode.E)){
+                <br>&emsp;if (item == Items.Garbage)
+                <br>&emsp;&ensp;PlayerController.collectedGarbage++;
+
+                <br>&emsp;else if (item == Items.Fork)
+                <br>&emsp;&ensp;PlayerController.collectedDishes++;
+
+                <br>&emsp;else if (item == Items.Milk)
+                <br>&emsp;&ensp;PlayerController.collectedMilk++;
+
+                <br>&emsp;Destroy(gameObject);
+                <br>&nbsp;} 
+                <br>&ensp;Destroy(gameObject, Random.Range(destroyTime, destroyTime*2));
+                <br>}
+          </p>
+        </div>
+      </div>
+    </div>  
+    
+    <div class="mySlides3 fade">
+      <div class="main_container">
+        <video class="left_container no_margin_right" src="./video/gesundi/plant.mp4" controls = "controls autoplay" autoplay loop></video>
+        <div class="right_container">
+          <p class="code">
+            IEnumerator Pouring(){
+              <br>&ensp;float ellapsedTime = 0f;
+              <br>&ensp;while (ellapsedTime < pouringDuration){
+                <br>&ensp;&ensp;if (!enemyCheck.enemyEntered){
+                  <br>&ensp;&ensp;&ensp;ellapsedTime += Time.deltaTime;
+                  <br>&ensp;&ensp;&ensp;pouringFinished = true;
+                  <br>&ensp;&ensp;&ensp;player.transform.position = playerFixedPos;
+                  <br>&ensp;&ensp;}
+                  <br>&ensp;&ensp;else{
+                    <br>&ensp;&ensp;&ensp;ellapsedTime = pouringDuration;
+                    <br>&ensp;&ensp;&ensp;pouringFinished = false;
+                    <br>&ensp;&ensp;}
+                  <br>&ensp;&ensp;playerObj.GetComponent<Animator>().SetBool("pouring", true);
+                  <br>&ensp;&ensp;pouring = true;
+                  <br>&ensp;&ensp;player.GetComponent<PlayerController>().canMove = false;
+                  <br>&ensp;&ensp;ellapsedTime += Time.deltaTime;
+                  <br>&ensp;&ensp;yield return null;
+                <br>&ensp;}
+                <br>...
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mySlides3 fade">
+      <div class="main_container">
+        <video class="left_container no_margin_right" src="./video/gesundi/dance.mp4" controls = "controls autoplay"></video>
+        <div class="right_container">
+          <p>To get mental health bonus player can relax with dancing and listening to music, but music will be turned off in a while by cousins</p>
+          <p class="code">
+            <br>if(Input.GetKeyDown(KeyCode.E) && triggered){
+              <br>&ensp;keyPressed = !keyPressed;
+              <br>&ensp;if (keyPressed){
+                <br>&ensp;&ensp;radioTurnedOn = true;
+                <br>&ensp;&ensp;PlayState(radioTurnedOn);
+                <br>&ensp;&ensp;float sec = Random.Range(60f, 189f);
+                <br>&ensp;&ensp;StartCoroutine(RadioDuration(sec));
+                <br>&ensp;}
+                <br>&ensp;if (!keyPressed){
+                  <br>&ensp;&ensp;radioTurnedOn = false;
+                  <br>&ensp;&ensp;PlayState(radioTurnedOn);
+                  <br>&ensp;}
+             <br>}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1, 'mySlides3')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'mySlides3')">&#10095;</a>
+
+      <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="mySlides3_dot dot" onclick="currentSlide(1, 'mySlides3')"></span>
+      <span class="mySlides3_dot dot" onclick="currentSlide(2, 'mySlides3')"></span>
+      <span class="mySlides3_dot dot" onclick="currentSlide(3, 'mySlides3')"></span>
+      <span class="mySlides3_dot dot" onclick="currentSlide(4, 'mySlides3')"></span>
+    </div>
+</div>  
+
+<div class="transition">
+  <div class="footprintBlock">
+    <audio class="footprintAudio" src="./audio/footstep1.mp3"></audio>
+    <img class="footprint leftFoot" src="./img/footprints2R.png" alt="footprint in the snow">
+  </div>
+  <div class="footprintBlock">
+    <audio class="footprintAudio" src="./audio/footstep2.mp3"></audio>
+    <img class="footprint rightFoot" src="./img/footprints2L.png" alt="footprint in the snow">
+  </div>
+  <div class="footprintBlock">
+    <audio class="footprintAudio" src="./audio/footstep3.mp3"></audio>
+    <img class="footprint leftFoot" src="./img/footprints2R.png" alt="footprint in the snow">
+  </div>
+</div>
+
+    <!-- Slideshow container -->
+<div class="slideshow-container contentToAppear">
+
+      <!--DATE-->
+  <div class='console-container' style="margin-bottom: 50px;"><span id='text4'></span><div class='console-underscore' id='console'>&#95;</div></div>
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides4 fade ">
+      <div class="main_container">
+        <img class="left_container" src="./img/kin/kinCover.jpg" style="width: 540px; height: 490px; margin-left: 100px;">
+        <div class="right_container">
+          <p>
+            <span class="text_article">Genre:</span>Platformer
+            <br>
+            <span class="text_article"><br>Thematic Setting:</span> Player needs to run through the the enemies and obstacles, pick up potions and use magic or weapon to fight
+            <br>
+            <span class="text_article"><br>Tech Stack:</span> C#, Unity
+            <br>
+            <span class="text_article"><br>Platform(s):</span> PC
+            <br>
+            <span class="text_article"><br>Extra:</span> My first experimental Unity game. I was adding features to this game along with learning Unity. Game took a long time due to desire of making my own sprites and animations.
+            <br><a href="https://strandgear.itch.io/kins-travels-demo">Full game is here</a>
+          </p>
+      </div>
+    </div>
+    </div>
+    <div class="mySlides4 fade " style="text-align: center;">
+      
+      <video class="main_container" style="width: auto;" src="./video/kin/Kin1.mp4" controls = "controls autoplay"></video>
+    </div>
+    <div class="mySlides4 fade">
+      <div class="main_container">
+        <div class="left_container no_margin_right" style="width: 505px; margin-left: 10px;">
+          <p class="code">
+            IEnumerator Shoot(){
+              <br>&ensp;currNum++;
+              <br>&ensp;equationUI.SetActive(false);
+              <br>&ensp;Time.timeScale = 1f;
+              <br>&ensp;if (currNum == randomNum){
+                <br>&ensp;&ensp;Equation();
+                <br>&ensp;&ensp;Time.timeScale = 0.5f;
+                <br>&ensp;&ensp;yield return new WaitForSeconds(inputTime);
+                <br>&ensp;&ensp;Time.timeScale = 1f;
+                <br>&ensp;&ensp;InputAnswer();
+        
+                <br>&ensp;&ensp;if (CheckAnswer()){
+                  <br>&ensp;&ensp;&ensp;projectilePrefab.GetComponent<Projectile>().IncreaseDamage(10);
+                    <br>&ensp;&ensp;&ensp;autoAttack++;
+                    <br>&ensp;&ensp;&ensp;StartCoroutine(Shoot());
+                    <br>&ensp;&ensp;&ensp;}
+                    <br>&ensp;&ensp;else
+                    <br>&ensp;&ensp;&ensp;StopAttack();
+                <br>&ensp;}
+                <br>&ensp;else if (currNum != randomNum && autoAttack < 0){
+                  <br>&ensp;&ensp;Attack();
+                  <br>&ensp;&ensp;yield return new WaitForSeconds(attackRate);
+                  <br>&ensp;&ensp;StartCoroutine(Shoot());
+                    <br>&ensp;}
+                <br>&ensp;else if (autoAttack >= 0){
+                  <br>&ensp;&ensp;CriticalAttack();
+                  <br>&ensp;&ensp;yield return new WaitForSeconds(attackRate);
+                  <br>&ensp;&ensp;StartCoroutine(Shoot());
+                }
+                <br>&ensp;if (autoAttack >= 3)
+                <br>&ensp;&ensp;StopAttack();
+            }
+          </p>
+        </div>
+        <video class="right_container no_margin_right" src="./video/kin/Cast.mp4" style="width: 650px;" loop autoplay controls muted></video>
+      </div>
+    </div> 
+
+    <div class="mySlides4 fade">
+      
+      <div class="main_container">
+        <video class="left_container " src="./video/kin/EnemyBehaviour.mp4" style="width: 630px; margin-left: 50px;" loop autoplay controls muted></video>
+        <div class="right_container ">
+          <h2 style="margin-top: 0;">Enemy Behaviour</h2>
+          <p class="code">
+            ...
+            <br>if (longRange){
+              <br>&ensp;movement.distanceToStop = 10;
+              <br>&ensp;attackAction = LongRangeAttack;
+              <br>}
+              <br>else{
+              <br>&ensp;movement.distanceToStop = 4;
+              <br>&ensp;attackAction = ShortRangeAttack;
+              <br>}
+              <br>if (isAgressive)
+            <br>&ensp;agressionFunc = ActiveAgr;
+            <br>else
+            <br>&ensp;agressionFunc = PassiveAgr;
+            <br>...
+            <br>void Update(){
+              <br>&ensp;if (agressionFunc()){
+                <br>&ensp;&ensp;movement.chasingPlayer = true;
+                <br>&ensp;&ensp;if (movement.reachedPlayer && Time.time >= nextAttackTime){
+                  <br>&ensp;&ensp;&ensp;attackAction();
+                  <br>&ensp;&ensp;&ensp;nextAttackTime = Time.time + attackRate;
+                        <br>&ensp;&ensp;}
+                    <br>&ensp;}
+             <br>}
+          </p>
+        </div>
+      </div>
+    </div> 
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1, 'mySlides4')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'mySlides4')">&#10095;</a>
+
+      <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="mySlides4_dot dot" onclick="currentSlide(1, 'mySlides4')"></span>
+      <span class="mySlides4_dot dot" onclick="currentSlide(2, 'mySlides4')"></span>
+      <span class="mySlides4_dot dot" onclick="currentSlide(3, 'mySlides4')"></span>
+      <span class="mySlides4_dot dot" onclick="currentSlide(4, 'mySlides4')"></span>
+    </div>
+  </div>
+</div>
+
+<button class="otherButton" onclick="showOther()">OTHER PROJECTS</button>
+
+<div class="double_container">
+<div class="small_container">
+    <!-- Slideshow container -->
+<div class="slideshow-container otherContent">
+  <h2>One Hour Timer</h2>
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides5 fade align">
+      <video class="main_container" style="width: 600px;" src="./video/timer.mp4" controls autoplay muted loop></video>
+    </div>
+    <div class="mySlides5 fade align">
+        <p>
+          <span class="text_article">Genre:</span> Simple one hour timer
+          <br> 
+          <span class="text_article"><br>Tech Stack:</span> Electron, HTML, JS, CSS
+          <br>
+          <span class="text_article"><br>Extra:</span> Feeling time improperly is a common problem for people with ADHD. There is a bunch of ways to fix it and set this timer is one of them.
+        </p>
+  </div>
+  <div class="mySlides5 fade align">
+    <p class="code">
+      function updateTimer() {
+        <br>&ensp;var dt = Date.now() - expected
+        <br>&ensp;  let seconds = time % 60
+        <br>&ensp;  let minutes = Math.floor(time / 60)
+      
+        <br>&ensp;  seconds = seconds < 10 ? '0' + seconds : seconds
+        <br>&ensp;  minutes = minutes < 10 ? '0' + minutes : minutes
+      
+        <br>&ensp;  countdownElement.innerHTML = `${minutes}:${seconds}`
+      
+        <br>&ensp;  if (time >= finalTime && !mainScreenOn){
+          <br>&ensp;&ensp;  hourPassed()
+          <br>&ensp;  else {
+            <br>&ensp;&ensp;    time++
+            <br>&ensp;&ensp;    expected += interval;
+            <br>&ensp;&ensp;    setTimeout(updateTimer, Math.max(0, interval - dt))
+            <br>&ensp;  }
+            <br>}
+    </p>
+  </div>
+      <!-- Next and previous buttons -->
+      <a class="prev bigger_arrow" style="left: -10px;" onclick="plusSlides(-1, 'mySlides5')">&#10094;</a>
+      <a class="next bigger_arrow" style="right: -10px;" onclick="plusSlides(1, 'mySlides5')">&#10095;</a>
+    
+        <!-- The dots/circles -->
+      <div style="text-align:center">
+          <span class="mySlides5_dot dot" onclick="currentSlide(1, 'mySlides5')"></span>
+          <span class="mySlides5_dot dot" onclick="currentSlide(2, 'mySlides5')"></span>
+          <span class="mySlides5_dot dot" onclick="currentSlide(3, 'mySlides5')"></span>
+      </div>
+  </div>
+</div>
+
+<div class="small_container">
+  <!-- Slideshow container -->
+  <div class="slideshow-container otherContent" style="width: 550px;">
+    <h2>Educational Test on PC</h2>
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides6 fade align" >
+      <video class="main_container" style="width: 520px;" src="./video/test.mp4" autoplay muted loop></video>
+    </div>
+  <div class="mySlides6 fade align">
+      <p>
+        <span class="text_article">Genre:</span> Test
+        <br>
+        <span class="text_article"><br>Thematic Setting:</span> Educational test with results recording
+        <br>
+        <span class="text_article"><br>Tech Stack:</span> Delphi
+        <br>
+        <span class="text_article"><br>Platform(s):</span> PC
+        <br>
+        <span class="text_article"><br>Extra:</span> University practical project
+        <br><a href="https://strandgear.itch.io/kins-travels-demo">Full game is here</a>
+      </p>
+      </div>
+   <div class="mySlides6 fade align" >
+        <p class="code" style="padding: 20px;">
+          procedure TForm3.Check(answer: string);
+          <br>begin
+          <br>&ensp;if Form1.FJSONObject.FindValue('1.'+IntToStr(i)+'.answer'). Value = answer then 
+          <br>&ensp;begin
+          <br>&ensp;Form1.sum:=Form1.sum+1;
+          <br>&ensp; end;
+          
+          <br>&ensp;  if i=20 then begin
+          <br>&ensp;  Form4.res:= IntToStr(Form1.sum);
+          <br>&ensp;  Form3.Close;
+          <br>&ensp; Form4.Show;
+          <br>&ensp; Form4.Label2.Caption:= IntToStr(Form1.sum);
+          <br>&ensp; end
+          <br>&ensp; else 
+          <br>&ensp; begin
+          <br>&ensp; i:=i+1;
+          <br>&ensp; UpdateAnswers();
+          <br>&ensp; end;
+          <br>end;
+        </p>
+    </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev bigger_arrow" onclick="plusSlides(-1, 'mySlides6')">&#10094;</a>
+        <a class="next bigger_arrow" onclick="plusSlides(1, 'mySlides6')">&#10095;</a>
+      
+          <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="mySlides6_dot dot" onclick="currentSlide(1, 'mySlides6')"></span>
+            <span class="mySlides6_dot dot" onclick="currentSlide(2, 'mySlides6')"></span>
+            <span class="mySlides6_dot dot" onclick="currentSlide(3, 'mySlides6')"></span>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="main_container">
+  <!-- Slideshow container -->
+  <div class="slideshow-container otherContent" style="width: 660px;">
+    <h2 style="align-self: center; margin-top: 0; position: absolute; top: 0;">Educational Website</h2>
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides7 fade ">
+      <video class="main_container" style="width: 610px;" src="./video/Untitle2d.mp4" autoplay muted loop></video>
+    </div>
+  <div class="mySlides7 fade " style="margin: 0 35px;">
+      <p>
+        <span class="text_article">Genre:</span> Educational website
+        <br>
+        <span class="text_article"><br>Thematic Setting:</span> Educational website with further test
+        <br>
+        <span class="text_article"><br>Tech Stack:</span> HTML, JS, CSS
+        <br>
+        <span class="text_article"><br>Platform(s):</span> Web
+        <br>
+        <span class="text_article"><br>Extra:</span> University practical project
+      </p>
+      </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev bigger_arrow" style="left: -30px;" onclick="plusSlides(-1, 'mySlides7')">&#10094;</a>
+        <a class="next bigger_arrow" style="right: -30px;" onclick="plusSlides(1, 'mySlides7')">&#10095;</a>
+      
+          <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="mySlides7_dot dot" onclick="currentSlide(1, 'mySlides7')"></span>
+            <span class="mySlides7_dot dot" onclick="currentSlide(2, 'mySlides7')"></span>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
