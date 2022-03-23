@@ -4,8 +4,7 @@ function interactionEvent(){
   userInteracted = true;
   document.getElementsByClassName("startBtn")[0].style.display = "none";
   playStep(firstStep.children[0]);
-  showStep(firstStep.children[1])
-
+  showStep(firstStep.children[1]);
 }
 
 function gitHover(element){
@@ -88,10 +87,10 @@ function showSlides(n, slidesClassName) {
 
 //by https://codepen.io/Tbgse
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['2015 year', 'Android Application'], 'text',['black','DimGrey']);
-consoleText(['2021 year', 'Web Platformer'], 'text2',['black','DimGrey']);
-consoleText(['2021 year', 'PC Idle'], 'text3',['black','DimGrey']);
-consoleText(['2020-2021', 'Platformer'], 'text4',['black','DimGrey']);
+consoleText(['Year 2015'], 'text',['black']);
+consoleText(['Year 2021'], 'text2',['black']);
+consoleText(['Year 2021'], 'text3',['black']);
+consoleText(['2020-2021'], 'text4',['black']); //,'DimGrey'
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

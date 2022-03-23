@@ -6,7 +6,7 @@
   src: url(./fonts/consolas.ttf) format("ttf");
 }
 /*html + body */
-html, body {
+html {
     height: 100%;
 }
 
@@ -20,6 +20,17 @@ body {
     vertical-align: middle;
     font-family: 'Hubballi', cursive;
     font-size: 27px;
+    overflow: overlay;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: rgba(255, 255, 255, 0.386);
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+background-image: url(./img/bgS.jpg);
 }
 
 img {
