@@ -87,7 +87,7 @@ function showSlides(n, slidesClassName) {
 
 //by https://codepen.io/Tbgse
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Year 2015'], 'text',['black']);
+consoleText(['Year 2017'], 'text',['black']);
 consoleText(['Year 2021'], 'text2',['black']);
 consoleText(['Year 2021'], 'text3',['black']);
 consoleText(['2020-2021'], 'text4',['black']); //,'DimGrey'
